@@ -49,6 +49,8 @@ nav{
 .log{
     display: flex;
     gap: 10px;
+    width: 111px;
+    height: 40px;
     align-items: center;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
@@ -56,6 +58,9 @@ nav{
 .log i{
     font-size: 28px;
     color: rgb(185, 185, 185, 1);
+}
+.log p{
+    font-size: 15px;
 }
 .list{
     height: 80px;
