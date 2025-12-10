@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    height: 100vh;
+    width: 100%;
+    background-image: url(https://static.wixstatic.com/media/225d0e_fceb052e35b54bbf9b95990574209f6f~mv2.jpg/v1/fill/w_1375,h_1213,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/225d0e_fceb052e35b54bbf9b95990574209f6f~mv2.jpg);
+    background-position: top;
+    background-size: cover;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 150px;
+    border-bottom: 1px solid white;
+}
+.title{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    height: 50px;
+    align-items: center;
+    padding-top: 60px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.title h1{
+    font-size: 55.0385px;
+}
+.apps{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.apps i{
+    color: grey;
+    font-size: 32px;
+}
+.log{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+}
+.log i{
+    font-size: 28px;
+    color: rgb(185, 185, 185, 1);
+}
+.list{
+    height: 100px;
+}
+.list ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    font-size: 18px;
+}
+.list ul a{
+    text-decoration: none;
+    color: black;
+    margin-top: 50px;
+}
