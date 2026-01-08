@@ -4,13 +4,12 @@
     box-sizing: border-box;
 }
 header{
-    height: 100%;
-    position: absolute;
-    top: 0;
     width: 100%;
+    height: 100vh;
     background-image: url(https://static.wixstatic.com/media/225d0e_fceb052e35b54bbf9b95990574209f6f~mv2.jpg/v1/fill/w_1375,h_1213,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/225d0e_fceb052e35b54bbf9b95990574209f6f~mv2.jpg);
-    background-position: top;
-    background-size: cover;
+    background-position: center bottom;
+    background-size: 65% auto;
+    background-repeat: no-repeat;
 }
 nav{
     display: flex;
@@ -85,4 +84,5 @@ nav{
     width: 100%;
     height: 100vh;
     background-image: url(https://static.wixstatic.com/media/nsplsh_b29502fcfe314f8db9e9b69eb036a24d~mv2.jpg/v1/fill/w_1225,h_894,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/nsplsh_b29502fcfe314f8db9e9b69eb036a24d~mv2.jpg);
+    background-position: center;
 }
