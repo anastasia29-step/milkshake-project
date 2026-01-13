@@ -1,9 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-header{
+
+header {
     background-image: url(https://static.wixstatic.com/media/225d0e_fceb052e35b54bbf9b95990574209f6f~mv2.jpg/v1/fill/w_1375,h_1213,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/225d0e_fceb052e35b54bbf9b95990574209f6f~mv2.jpg);
     width: 100%;
     height: 100vh;
@@ -11,7 +12,8 @@ header{
     background-repeat: no-repeat;
     background-position: center bottom;
 }
-nav{
+
+nav {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,7 +24,8 @@ nav{
     top: 0;
     padding: 15px;
 }
-.title{
+
+.title {
     display: flex;
     justify-content: space-between;
     width: 50%;
@@ -32,30 +35,36 @@ nav{
     /* background-color: green; */
     padding-top: 20px;
 }
-.title h1{
+
+.title h1 {
     font-size: 55.0385px;
 }
-.apps{
+
+.apps {
     display: flex;
     gap: 5px;
     align-items: center;
 }
-.apps i{
-    color:#969696;
+
+.apps i {
+    color: #969696;
     font-size: 32px;
 }
-.log{
+
+.log {
     display: flex;
     gap: 5px;
     align-items: center;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
 }
-.log i{
+
+.log i {
     font-size: 28px;
     color: rgb(185, 185, 185, 1);
 }
-.list{
+
+.list {
     height: 43px;
     width: 869px;
     display: flex;
@@ -64,7 +73,8 @@ nav{
     align-items: center;
     justify-content: center;
 }
-.list ul{
+
+.list ul {
     height: 100px;
     display: flex;
     list-style: none;
@@ -75,7 +85,8 @@ nav{
     font-size: 18px;
     /* background-color: aqua; */
 }
-.list ul a{
+
+.list ul a {
     text-decoration: none;
     color: black;
     margin-top: 50px;
@@ -83,32 +94,37 @@ nav{
     display: flex;
     align-items: center;
 }
+
 .list ul a:hover {
     border-top: 2px solid black;
     border-bottom: 2px solid black;
 }
-section{
+
+section {
     background-image: url(https://static.wixstatic.com/media/nsplsh_b29502fcfe314f8db9e9b69eb036a24d~mv2.jpg/v1/fill/w_1225,h_894,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/nsplsh_b29502fcfe314f8db9e9b69eb036a24d~mv2.jpg);
     width: 100%;
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.left{
+
+.left {
     height: 100%;
     width: 50%;
     position: absolute;
     left: 300px;
 }
-.firstFood{
+
+.firstFood {
     width: 222px;
     height: 270px;
     position: absolute;
-    top: 214px; 
+    top: 214px;
     left: 198px;
     transform: rotate(373deg);
 }
-.secondFood{
+
+.secondFood {
     width: 259px;
     height: 270px;
     position: absolute;
@@ -116,7 +132,8 @@ section{
     left: 130px;
     transform: rotate(377deg);
 }
-.thirdFood{
+
+.thirdFood {
     width: 270px;
     height: 246px;
     position: absolute;
@@ -125,7 +142,8 @@ section{
     transform: rotate(377deg);
     z-index: 6;
 }
-.fourthFood{
+
+.fourthFood {
     width: 270px;
     height: 186px;
     position: absolute;
@@ -133,7 +151,8 @@ section{
     left: 172px;
     transform: rotate(360deg);
 }
-.fifthFood{
+
+.fifthFood {
     width: 258px;
     height: 270px;
     position: absolute;
@@ -142,68 +161,79 @@ section{
     transform: rotate(356deg);
     z-index: 8;
 }
-.right{
+
+.right {
     height: 100%;
     width: 50%;
     position: absolute;
     left: 760px;
     top: 810px;
 }
-.text{
+
+.text {
     width: 376px;
     height: 450px;
     background-color: #F7F5E1;
     padding: 20px;
     padding-right: 50px;
 }
-.text h3{
+
+.text h3 {
     font-size: 26px;
     font-weight: 600;
     font-family: "DIN Neuzeit Grotesk LT W01 BdCn";
 }
-.text p{
+
+.text p {
     font-size: 15px;
     font-family: "Avenir Light";
     font-weight: 300;
 }
-.pink{
+
+.pink {
     width: 100%;
     height: 100vh;
     background-color: #EAE0DA;
     text-align: center;
 }
-.pink h2{
+
+.pink h2 {
     font-family: "Cinzel", serif;
     font-size: 46px;
     font-weight: normal;
     letter-spacing: 3mm;
     padding-top: 30px;
 }
-.pink p{
+
+.pink p {
     font-family: "AdobeCaslon";
     font-size: 25px;
     line-height: 1.3em;
     font-weight: 500;
 }
-.ptext{
+
+.ptext {
     height: 440px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding-top: 50px;
-    
+
 }
-.authors{
+
+.authors {
     height: 100px;
     display: flex;
     flex-direction: column;
 }
-.pinkduo{
+
+.pinkduo {
     width: 100%;
     height: 100vh;
-    background-color:#EAE0DA;
+    background-color: #EAE0DA;
 }
-.web{
+
+.web {
     width: 100%;
     height: 180px;
     display: flex;
@@ -211,12 +241,14 @@ section{
     padding-right: 120px;
     justify-content: space-between;
 }
-.surati img{
+
+.surati img {
     width: 82px;
     height: 82px;
     border-radius: 50%;
 }
-.web button{
+
+.web button {
     width: 133.600px;
     height: 38px;
     display: flex;
@@ -226,54 +258,101 @@ section{
     font-size: 16px;
     font-family: "Avenir Light";
     cursor: pointer;
-
 }
-.user{
+
+.user {
     margin-left: -210px;
 }
-.user p{
+
+.user p {
     font-family: "Avenir Light";
 
 }
-.suratebi{
+
+.suratebi {
     display: flex;
     width: 100%;
     height: 100vh;
-    background-color:#EAE0DA;
+    background-color: #EAE0DA;
     border-bottom: 1px solid rgb(209, 207, 207);
 
 }
-.leftsur{
+
+.leftsur {
     display: flex;
     flex-direction: column;
 
 }
-.rightsur img{
+
+.rightsur img {
     width: 460px;
     height: 460px;
 }
-.padding{
+
+.padding {
     width: 100%;
     height: 100vh;
     padding: 80px;
     margin-top: 100px;
 }
-.card{
+
+.card {
     width: 100%;
     height: 100vh;
     background-color: #EAE0DA;
     padding: 80px;
 }
-.cardLeft{
+
+.cardLeft {
     margin-left: 90px;
-    width: 50%;
-    height: 400px;
+    width: 30%;
+    height: 450px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.cardLeft h1{
+
+.cardLeft h1 {
     font-family: "Dancing Script", cursive;
     font-size: 56px;
     font-style: italic;
+    margin-bottom: 50px;
+}
+
+.icons {
+    display: flex;
+    gap: 30px;
+    height: 60px;
+    align-items: center;
+}
+
+.icons i {
+    width: 30px;
+    height: 30px;
+    font-size: x-large;
+}
+
+.icons p {
+    font-size: 16px;
+    font-family: "Avenir Light";
+    line-height: 1.8em;
+}
+
+.apps2 {
+    font-size: large;
+    margin-left: 45px;
+    cursor: pointer;
+}
+.apps2 i{
+    color: black;
+}
+
+.Privacy {
+    color: white;
+    margin-left: 55px;
+    margin-top: -23px;
+    font-size: 14px;
+    text-decoration: underline;
+    font-family: "Avenir Light";
+    cursor: pointer;
 }
