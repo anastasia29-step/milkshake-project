@@ -61,7 +61,7 @@ section {
 .special {
     width: 60%;
     margin-left: 250px;
-    
+
 }
 
 .special h1 {
@@ -70,10 +70,62 @@ section {
     font-size: 35px;
     font-style: normal;
 }
-.special p{
+
+.special p {
     font-family: "Adobe Caslon W01 SmBd";
     font-size: 24px;
     font-weight: normal;
     font-style: normal;
+}
 
+.soups {
+    display: flex;
+    flex-direction: column;
+    position: static;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    gap: 90px;
+    padding: 50px;
+}
+
+.soup1 {
+    width: 306px;
+    height: 290px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}
+
+.soup1 img {
+    width: 390px;
+    height: 304px;
+    margin-top: -40px;
+}
+
+.soup1 h1 {
+    font-family: "Gloock", serif;
+    font-size: 20px;
+    line-height: normal;
+    color: #403a2a;
+    font-weight: normal;
+    margin-top: -90px;
+    margin-left: -45px;
+}
+.soup1 p{
+    font-family: "Adobe Caslon W01 SmBd";
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 0.9em;
+    margin-top: 5px;
+}
+.firstline {
+    display: flex;
+    margin-left: 220px;
+    gap: 40px;
 }
