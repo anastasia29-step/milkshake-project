@@ -1,0 +1,79 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    height: 117px;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    opacity: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul {
+    width: 60%;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fut {
+    font-family: "Futura LT W01 Medium";
+    font-size: 16px;
+}
+
+.ave {
+    font-size: 15px;
+    font-family: "Avenir Light";
+}
+
+nav ul li {
+    letter-spacing: 0.1em;
+}
+
+.diff {
+    font-size: 36px;
+    font-family: "Adobe Caslon W01 SmBd";
+}
+
+img {
+    width: 100%;
+    height: 510px;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+section {
+    width: 100%;
+    height: 230px;
+    background-color: rgb(246, 246, 246);
+    padding: 20px;
+    margin-top: -5px;
+}
+
+.special {
+    width: 60%;
+    margin-left: 250px;
+    
+}
+
+.special h1 {
+    font-family: "Gloock", serif;
+    font-weight: normal;
+    font-size: 35px;
+    font-style: normal;
+}
+.special p{
+    font-family: "Adobe Caslon W01 SmBd";
+    font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+
+}
