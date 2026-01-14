@@ -3,10 +3,12 @@
     margin: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     opacity: 0;
     animation: open 2s ease forwards;
 }
+
 @keyframes open {
     to {
         opacity: 1;
@@ -148,8 +150,9 @@ section {
     margin: auto;
     margin-top: 110px;
     border-radius: 17px;
-    padding-left: 50px;
-    padding-top: 15px;
+    /* padding-left: 50px;
+    padding-top: 15px; */
+    padding: 5px 55px;
 }
 
 .order h1 {
@@ -183,8 +186,45 @@ section {
     height: 90px;
     justify-content: center;
 }
+
 .order ul li {
-    margin-left: 30px;
+    margin-left: 20px;
     list-style-type: disc;
 }
 
+.inps {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 460px;
+    justify-content: space-between;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    color: #403a2a;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.names {
+    display: flex;
+    gap: 5px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+
+}
+.names input{
+    height: 40px;
+    width: 305px;
+    border-radius: 8px;
+    border: none;
+}
+
+.namescol {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.event{
+    display: flex;
+}
