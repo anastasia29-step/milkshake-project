@@ -3,6 +3,15 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    opacity: 0;
+    animation: open 2s ease forwards;
+}
+@keyframes open {
+    to {
+        opacity: 1;
+    }
+}
 
 nav {
     display: flex;
@@ -117,19 +126,22 @@ section {
     margin-top: -90px;
     margin-left: -45px;
 }
-.soup1 p{
+
+.soup1 p {
     font-family: "Adobe Caslon W01 SmBd";
     font-size: 20px;
     font-weight: normal;
     line-height: 0.9em;
     margin-top: 5px;
 }
+
 .firstline {
     display: flex;
     margin-left: 220px;
     gap: 40px;
 }
-.order{
+
+.order {
     width: 726px;
     height: 800px;
     background-color: #DDF2FB;
@@ -139,22 +151,43 @@ section {
     padding-left: 50px;
     padding-top: 15px;
 }
-.order h1{
+
+.order h1 {
     font-family: 'Times New Roman', Times, serif;
-    color: rgb(98,76,64);
+    color: rgb(98, 76, 64);
     font-size: 40px;
     line-height: 1.5;
 }
-.order p{
+
+.order p {
     font-family: "Poppins", sans-serif;
-    color: rgb(98,76,64);
+    color: rgb(98, 76, 64);
     font-size: 16px;
     font-weight: 200;
     line-height: 1.5;
 }
-.order h2{
+
+.order h2 {
     font-family: "Arial";
-    color: rgb(98,76,64);
+    color: rgb(98, 76, 64);
     font-size: 24px;
     line-height: 1.5;
+    font-weight: 700;
+}
+
+.order ul {
+    display: flex;
+    flex-direction: column;
+    color: #403a2a;
+    font-family: "Poppins", sans-serif;
+    height: 90px;
+    justify-content: center;
+}
+.order ul li {
+    display: flex;
+    margin-left: 30px;
+    list-style-type: disc;
+}
+.order ul h3{
+    font-weight: 300;
 }
