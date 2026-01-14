@@ -184,10 +184,7 @@ section {
     justify-content: center;
 }
 .order ul li {
-    display: flex;
     margin-left: 30px;
     list-style-type: disc;
 }
-.order ul h3{
-    font-weight: 300;
-}
+
