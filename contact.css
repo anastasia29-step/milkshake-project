@@ -53,3 +53,149 @@ nav ul li {
     font-size: 36px;
     font-family: "Adobe Caslon W01 SmBd";
 }
+
+section {
+    height: 120vh;
+    width: 100%;
+
+}
+
+section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    position: relative;
+}
+
+section .card {
+    background-color: white;
+    position: absolute;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    width: 622px;
+    height: 534px;
+    margin-top: -700px;
+    margin-left: 450px;
+}
+
+.card .title {
+    height: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.title h1 {
+    font-family: "Dancing Script", cursive;
+    font-size: 30px;
+    transform: rotate(-10deg);
+    font-weight: 600;
+    font-style: italic;
+
+}
+
+.sides {
+    display: flex;
+    padding: 0 40px;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.left {
+    width: 280px;
+    height: 130px;
+    min-height: 88px;
+}
+
+.left p {
+    font-size: 22px;
+    font-family: "Adobe Caslon W01 SmBd";
+    letter-spacing: normal;
+    line-height: 1.9em;
+    font-weight: bold;
+    width: 100%;
+}
+
+.line {
+    width: 2px;
+    height: 350px;
+    background-color: black;
+    margin-right: -170px;
+}
+
+.right {
+    width: 284px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 190px !important;
+}
+
+.right label {
+    color: #2061B7;
+    font-family: "Avenir Light";
+    font-size: 15px;
+}
+
+.right input {
+    width: 247px;
+    height: 31px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    margin-top: -10px;
+}
+
+.right input::placeholder {
+    font-family: "Avenir Light";
+    color: black;
+}
+
+.right textarea {
+    width: 247px;
+    height: 88px;
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+    margin-top: -10px;
+}
+
+.right textarea::placeholder {
+    font-family: "Avenir Light";
+    color: black;
+}
+.right input:hover{
+    border: none;
+    padding: 3px;
+    background-color: #ECF4F8;
+}
+.right textarea:hover{
+    border: none;
+    padding: 3px;
+    background-color: #ECF4F8;
+}
+
+.right button {
+    width: 117px;
+    height: 38px;
+    border: 1px solid #2061B7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2061B7;
+    background-color: white;
+    margin-left: 60px;
+    font-family: "Avenir Light";
+    cursor: pointer;
+    transition: 0.5s;
+}
+.right button:hover{
+    background-color: black;
+    color: white;
+    border: none;
+}
