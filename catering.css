@@ -84,11 +84,13 @@ img {
     font-size: 32px;
     font-weight: normal;
 }
-.des{
+
+.des {
     width: 100%;
     height: 204px;
     padding: 25px 40px;
 }
+
 .des h2 {
     font-family: "Adobe Caslon W01 SmBd";
     font-size: 20px;
@@ -97,7 +99,8 @@ img {
     font-style: normal;
     letter-spacing: 0.05em;
 }
-.form{
+
+.form {
     width: 716px;
     height: 914px;
     background-color: #EAE0DA;
@@ -105,4 +108,101 @@ img {
     z-index: 999;
     margin-left: 400px;
     margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 50px 120px;
+}
+
+.form label,
+input,
+textarea {
+    width: 100%;
+    background-color: transparent;
+}
+
+.form input,
+textarea {
+    border: none;
+    border-bottom: 2px solid white;
+}
+
+.next {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    gap: 100px;
+}
+
+.nextcol {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.form h2 {
+    font-family: "Futura LT W01 Medium";
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.4em;
+
+}
+
+.form label {
+    font-family: "Futura LT W01 Medium";
+    line-height: 1;
+    font-size: 14px;
+    margin-bottom: -40px;
+}
+
+.form input {
+    height: 44px;
+    width: 450px;
+    padding: 10px;
+}
+
+.form input::placeholder {
+    font-size: 17px;
+    color: #687393;
+    font-family: "Futura LT W01 Medium";
+
+}
+
+.form textarea::placeholder {
+    font-size: 19px;
+    color: #687393;
+    font-family: "Futura LT W01 Medium";
+
+}
+
+.form input:hover {
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+.form textarea {
+    height: 130px;
+    padding: 20px;
+}
+
+.form button {
+    width: 147px;
+    height: 42px;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 25px;
+    color: black;
+    font-family: "Futura LT W01 Medium";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    transition: 0.5s all;
+    cursor: pointer;
+}
+.form button:hover{
+    background-color: black;
+    color: white;
 }

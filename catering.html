@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="catering.css">
     <link href="https://db.onlinewebfonts.com/c/66c3da1e6125b1365fa02afedc2b9d1c?family=Adobe+Caslon+W01+SmBd"
         rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+    <link href="https://db.onlinewebfonts.com/c/77d394fa0c1103c648f880b77cb4a32f?family=Futura+LT+W01+Medium"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -42,19 +47,23 @@
     </div>
     <div class="form">
         <h2>Request a Quote</h2>
-        <label for="" >Full Name *</label>
-        <input type="text" required>
+        <label  for="">Full Name *</label>
+        <input style="height: 44px;" type="text" required>
         <label for="">Email *</label>
-        <input type="email" required>
+        <input style="height: 44px;" type="email" required>
         <label for="">Phone</label>
-        <input type="text" placeholder="Phone">
+        <input style="height: 60px;" type="text" placeholder="Phone">
         <label for="">Select a date *</label>
         <input type="month" placeholder="Select a date">
         <div class="next">
-            <label for="">Guest Count *</label>
-            <input type="number" required>
-            <label for="">What time?</label>
-            <input type="time">
+            <div class="nextcol">
+                <label for="">Guest Count *</label>
+                <input style="height: 60px; width: 176px;"  type="number" placeholder="Enter a number" required>
+            </div>
+            <div class="nextcol">
+                <label for="">What time?</label>
+                <input style="width: 142px; height: 48px;" type="time">
+            </div>
         </div>
         <label for="">Write a message *</label>
         <textarea name="" id="" placeholder="Hi! I am looking for a quote for 30 people for June 9th..."></textarea>
