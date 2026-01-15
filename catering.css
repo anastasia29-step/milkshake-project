@@ -202,7 +202,75 @@ textarea {
     transition: 0.5s all;
     cursor: pointer;
 }
-.form button:hover{
+
+.form button:hover {
     background-color: black;
     color: white;
+}
+
+.note {
+    width: 868px;
+    height: 89px;
+    margin: auto;
+    position: relative;
+    z-index: 999;
+    margin-top: 1000px;
+}
+
+.note h3 {
+    font-family: "Adobe Caslon W01 SmBd";
+    font-size: 19px;
+}
+
+.imgs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 40px;
+}
+.img-box{
+    width: 100%;
+    height: 531px;
+    overflow: hidden;
+}
+.img-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+footer {
+    width: 100%;
+    height: 130px;
+    background-color: rgb(246 246 246);
+    background-image: url(https://static.parastorage.com/services/editor-elements-library/dist/thunderbolt/media/ironpatern.84ec58ff.png);
+    box-shadow: 0 0 5px black;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.follow {
+    height: 50px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Adobe Caslon W01 SmBd";
+}
+
+.follow h5 {
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.apps {
+    font-size: 30px;
+    display: flex;
+    gap: 10px;
+}
+
+.apps a {
+    color: gray;
 }
