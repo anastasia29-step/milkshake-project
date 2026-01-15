@@ -1,0 +1,160 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    opacity: 0;
+    animation: open 2s ease forwards;
+}
+
+@keyframes open {
+    to {
+        opacity: 1;
+    }
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    height: 117px;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    opacity: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul {
+    width: 60%;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fut {
+    font-family: "Futura LT W01 Medium";
+    font-size: 16px;
+}
+
+.ave {
+    font-size: 15px;
+    font-family: "Avenir Light";
+}
+
+nav ul li {
+    letter-spacing: 0.1em;
+}
+
+.diff {
+    font-size: 36px;
+    font-family: "Adobe Caslon W01 SmBd";
+}
+
+section {
+    width: 100%;
+    height: 1201px;
+    background-color: #EAE0DA;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title h1 {
+    font-family: "Droid Serif W01 Regular";
+    font-size: 23px;
+    font-weight: normal;
+    font-style: normal;
+    margin-top: -70px;
+    margin-left: -100px;
+}
+.par{
+    margin-left: -500px;
+    margin-bottom: 5px;
+}
+.par h2 {
+    font-family: "Futura LT W01 Medium";
+    font-weight: normal;
+    letter-spacing: 0.03em;
+    font-size: 20px;
+    font-style: italic;
+}
+.text{
+    margin-left: -50px;
+}
+.text p, ol{
+    font-family: "Avenir Light";
+    font-size: 16px;
+    line-height: 1.3em;
+    font-style: normal;
+    font-weight: normal;
+
+}
+.a{
+    width: 708px;
+    height: 170px;
+}
+.b{
+    width:690px;
+    height:62px;
+}
+.c{
+    width: 865px;
+    height: 147px;
+}
+.d{
+    width: 675px;
+    height: 190px;
+}
+.e{
+    width: 665px;
+    height: 105px;
+}
+.f{
+    width:502px;
+    height: 40px;
+}
+.g{
+    width:624px;
+    height: 105px;
+}
+footer {
+    width: 100%;
+    height: 130px;
+    background-color: rgb(246 246 246);
+    background-image: url(https://static.parastorage.com/services/editor-elements-library/dist/thunderbolt/media/ironpatern.84ec58ff.png);
+    box-shadow: 0 0 5px black;
+    /* margin-top: 100px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.follow {
+    height: 50px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Adobe Caslon W01 SmBd";
+}
+
+.follow h5 {
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.apps {
+    font-size: 30px;
+    display: flex;
+    gap: 10px;
+}
+
+.apps a {
+    color: gray;
+}
