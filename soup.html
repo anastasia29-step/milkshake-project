@@ -134,18 +134,32 @@
                         <input type="number">
                     </div>
                 </div>
-                <label for="">Number of guests *</label>
+                <label style="margin-left: -150px; margin-bottom: -10px;" for="">Number of guests *</label>
                 <input style="width: 305px; height: 40px; border: none; border-radius: 8px;" type="number" required>
-                <label style="margin-left: -460px;" for="">When is the event? *</label>
+                <label style="margin-left: -460px;" for="month">When is the event? *</label>
                 <div class="event">
-                    <input style="width: 240px; height: 40px;" type="month" placeholder="Month">
+                    <select style="width: 240px; height: 40px;" id="month" required>
+                        <option value="" disabled selected hidden>Month</option>
+                        <option>January</option>
+                        <option>February</option>
+                        <option>March</option>
+                        <option>April</option>
+                        <option>May</option>
+                        <option>June</option>
+                        <option>July</option>
+                        <option>August</option>
+                        <option>September</option>
+                        <option>October</option>
+                        <option>November</option>
+                        <option>December</option>
+                    </select>
                     <input style="width: 120px; height: 40px;" type="number" placeholder="Day">
                     <input style="width: 120px; height: 40px;" type="number" placeholder="Year">
                     <input style="width: 120px; height: 40px;" type="number" placeholder="HH:MM">
                 </div>
-                <label for="">Which soup(s) are you inetersted in?</label>
-                <textarea name="" id="" placeholder="48-hour notice is required!"></textarea>
-                <button type="submit">Submit</button>
+                <label style="margin-left: -340px;" for="">Which soup(s) are you inetersted in?</label>
+                <textarea style="width: 616px; height: 92px; border: none; border-radius: 8px; padding: 12px;" name="" id="" placeholder="48-hour notice is required!"></textarea>
+                <button class="brown" type="submit">Submit</button>
             </div>
         </div>
     </div>

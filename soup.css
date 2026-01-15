@@ -213,7 +213,8 @@ section {
     justify-content: center;
 
 }
-.names input{
+
+.names input {
     height: 40px;
     width: 305px;
     border-radius: 8px;
@@ -223,8 +224,43 @@ section {
 .namescol {
     display: flex;
     flex-direction: column;
-    gap: 7px;
+    gap: 5px;
 }
-.event{
+
+.event {
     display: flex;
+    gap: 5px;
+}
+
+.event input,
+select {
+    border: none;
+    border-radius: 8px;
+}
+
+.event input,
+select,
+textarea {
+    font-family: "Poppins", sans-serif;
+    color: #403a2a;
+    font-weight: 200;
+    font-size: 16px;
+    padding-left: 12px;
+}
+
+.brown{
+    width: 409px;
+    height: 41px;
+    border-radius: 25px;
+    background-color: #624C40 ;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+    border: 1px dashed red;
+    cursor: crosshair;
+    transition: 1s;
+}
+.brown:hover{
+    background-color: #897970;
 }
