@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    width: 100%;
+    height: 287px;
+}
+
+nav img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    position: relative;
+}
+
+.list {
+    position: absolute;
+    width: 962px;
+    height: 44px;
+    background-color: #EAE0DA;
+    margin-top: -250px;
+    margin-left: 300px;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.list ul {
+    display: flex;
+    height: 100%;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list ul a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.navText{
+    width: 400px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -200px;
+    margin-left: 500px;
+    position: absolute;
+    color: white;
+
+}
+.navText h2{
+    font-family: "Gloock", serif;
+    font-size: 93px;
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: 0.03em;
+}
+.navText h3{
+    font-family: "Lulo Clean W01 One Bold";
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    font-weight: normal;
+    font-style: normal;
+}
