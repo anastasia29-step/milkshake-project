@@ -54,7 +54,7 @@ nav img {
     justify-content: center;
     align-items: center;
     margin-top: -200px;
-    margin-left: 500px;
+    margin-left: 560px;
     position: absolute;
     color: white;
 
@@ -72,4 +72,31 @@ nav img {
     letter-spacing: 0.05em;
     font-weight: normal;
     font-style: normal;
+}
+.card{
+    width: 1069px;
+    height: 9440px;
+    background-color: #DED4C4;
+    margin-top: -10px;
+    margin-left: 240px;
+    position: absolute;
+    padding: 20px;
+}
+.card button{
+    width: 315px;
+    height: 42px;
+    background-color: transparent;
+    border: 1px solid black;
+    font-family: "Playfair", serif;
+    font-size: 18px;
+    font-style: bold;
+    font-weight: 800;
+    padding-block-start: 8px 16px;
+    cursor: pointer;
+}
+.card button a{
+    color: black;
+}
+.card button:hover{
+    background-color: #D3C9BA;
 }
