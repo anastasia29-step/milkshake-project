@@ -68,16 +68,7 @@ nav {
     align-items: center;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
-    animation: show 3s ease;
-    opacity: 0;
 }
-
-@keyframes show {
-    to {
-        opacity: 1;
-    }
-}
-
 .log i {
     font-size: 28px;
     color: rgb(185, 185, 185, 1);
