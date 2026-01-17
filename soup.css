@@ -40,9 +40,21 @@ nav ul {
     font-size: 16px;
 }
 
+.fut:hover {
+    text-decoration: underline;
+}
+
 .ave {
     font-size: 15px;
     font-family: "Avenir Light";
+    width: 142px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ave:hover {
+    border: 1px solid black;
 }
 
 nav ul li {
@@ -287,15 +299,18 @@ footer {
     justify-content: center;
     font-family: "Adobe Caslon W01 SmBd";
 }
-.follow h5{
+
+.follow h5 {
     margin-top: 20px;
     font-size: 25px;
 }
+
 .apps {
     font-size: 30px;
     display: flex;
     gap: 10px;
 }
-.apps a{
+
+.apps a {
     color: gray;
 }
