@@ -54,3 +54,13 @@ section {
     font-size: 16px;
     cursor: pointer;
 }
+.close {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 28px;
+    text-decoration: none;
+    color: black;
+    font-family: "Avenir Light";
+
+}
