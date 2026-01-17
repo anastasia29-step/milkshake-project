@@ -1,0 +1,56 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F6F6F6;
+}
+
+.reset {
+    width: 320px;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.reset h1 {
+    font-family: "Dancing Script", cursive;
+    font-style: italic;
+    font-size: 48px;
+}
+.reset p{
+    font-family: "Avenir Light";
+    font-size: 18px;
+    font-style: normal;
+    margin-top: -30px;
+}
+.reset label{
+    font-family: "Avenir Light";
+    color: grey;
+}
+.reset input{
+    width: 320px;
+    height: 37px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid black;
+    margin-top: -40px;
+}
+.reset button{
+    width: 320px;
+    height: 48px;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
