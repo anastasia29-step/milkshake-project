@@ -68,6 +68,18 @@ nav {
     align-items: center;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
+    cursor: pointer;
+}
+.log a{
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    color: black;
+    position: relative;
+    z-index: 1000;
+}
+.log a p{
+    cursor: pointer;
 }
 .log i {
     font-size: 28px;

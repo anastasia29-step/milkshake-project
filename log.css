@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F6F6F6;
+}
+
+.sign {
+    width: 560px;
+    height: 438px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sign h1 {
+    font-family: "Dancing Script", cursive;
+    font-style: italic;
+    font-size: 48px;
+}
+
+.sign p {
+    font-family: "Avenir Light";
+    font-size: 18px;
+    font-style: normal;
+}
+
+.sign p a {
+    text-decoration: none;
+    color: black;
+}
+
+.google {
+    background-color: white;
+    border: 1px solid rgb(230, 229, 229);
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+.facebook {
+    font-size: 16px;
+    background-color: #1878F2;
+    border: none;
+    color: white;
+}
+
+.fa-brands {
+    font-size: x-large;
+    margin-left: -60px;
+    margin-right: 50px;
+}
+
+.or {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.line {
+    width: 130px;
+    height: 1px;
+    background-color: black;
+}
+
+.mail {
+    background-color: transparent;
+    border: 1px solid black;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+.check {
+    display: flex;
+    height: 21px;
+    width: 363px;
+    gap: 3px;
+    align-items: center;
+}
+
+.check p {
+    font-size: 15px;
+}
+
+.read-more summary {
+    cursor: pointer;
+    display: flex;
+    text-decoration: underline;
+    font-family: "Avenir Light";
+    font-size: 15px;
+}
+
+.read-more[open] summary {
+    content: "Read less";
+    display: flex;
+}
+
+.close {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 28px;
+    text-decoration: none;
+    color: black;
+    font-family: "Avenir Light";
+
+}
