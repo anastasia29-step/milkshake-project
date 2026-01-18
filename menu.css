@@ -214,6 +214,10 @@ nav img {
     width: 320px;
     height: 170px;
     display: flex;
+    cursor: pointer;
+}
+.item:hover{
+    background-color: #D3C9BA;
 }
 
 .menu-item {
