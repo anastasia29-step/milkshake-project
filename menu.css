@@ -46,7 +46,8 @@ nav img {
     display: flex;
     align-items: center;
 }
-.navText{
+
+.navText {
     width: 400px;
     height: 140px;
     display: flex;
@@ -59,21 +60,24 @@ nav img {
     color: white;
 
 }
-.navText h2{
+
+.navText h2 {
     font-family: "Gloock", serif;
     font-size: 93px;
     font-weight: normal;
     font-style: normal;
     letter-spacing: 0.03em;
 }
-.navText h3{
+
+.navText h3 {
     font-family: "Lulo Clean W01 One Bold";
     font-size: 16px;
     letter-spacing: 0.05em;
     font-weight: normal;
     font-style: normal;
 }
-.card{
+
+.card {
     width: 1069px;
     height: 9440px;
     background-color: #DED4C4;
@@ -82,7 +86,8 @@ nav img {
     position: absolute;
     padding: 20px;
 }
-.card button{
+
+.card button {
     width: 315px;
     height: 42px;
     background-color: transparent;
@@ -94,9 +99,100 @@ nav img {
     padding-block-start: 8px 16px;
     cursor: pointer;
 }
-.card button a{
+
+.card button a {
     color: black;
 }
-.card button:hover{
+
+.card button:hover {
     background-color: #D3C9BA;
+}
+
+.select {
+    display: flex;
+    width: 100%;
+    height: 70px;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #DED4C4;
+}
+
+.menusel {
+    height: 40px;
+    width: 281px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-family: "Playfair", serif;
+    border-right: 1px solid gray;
+    justify-content: space-between;
+}
+
+.menusel select:hover {
+    border: none;
+}
+
+.food {
+    width: 740px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.food ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 16px;
+    padding: 10px;
+    scrollbar-width: smooth;
+    font-family: "Playfair", serif;
+    background-color: transparent;
+    list-style: none;
+    align-items: center;
+}
+
+.food ul li {
+    font-size: 19px;
+    font-style: bold;
+    font-weight: 700;
+}
+
+.food ul::-webkit-scrollbar {
+    display: none;
+}
+
+.card h2 {
+    height: 30px;
+    width: 100%;
+    font-size: 28px;
+    font-family: "Avenir Light";
+    margin-top: 40px;
+}
+
+.card h3 {
+    font-family: "Avenir Light";
+    font-size: 20px;
+    margin-top: 40px;
+}
+.spec{
+    display: flex;
+    gap: 10px;
+    height: 80px;
+    align-items: center;
+}
+.spec h2 {
+    color: white;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 20px;
+    line-height:normal;
+    font-style: italic;
+    letter-spacing: 0.05em;
 }
