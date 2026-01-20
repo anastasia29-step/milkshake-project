@@ -14,6 +14,9 @@ body {
         opacity: 1;
     }
 }
+img{
+    height: auto;
+}
 
 nav {
     display: flex;
@@ -75,15 +78,15 @@ img {
 
 section {
     width: 100%;
-    height: 230px;
+    height: auto;
     background-color: rgb(246, 246, 246);
     padding: 20px;
     margin-top: -5px;
 }
 
 .special {
-    width: 60%;
-    margin-left: 250px;
+    width: 100%;
+    margin-left: 0;
 
 }
 
@@ -106,7 +109,7 @@ section {
     flex-direction: column;
     position: static;
     width: 100%;
-    height: 100vh;
+    height: auto;
     background-color: white;
     gap: 90px;
     padding: 50px;
@@ -219,8 +222,9 @@ section {
 
 .names {
     display: flex;
-    gap: 5px;
-    height: 60px;
+    gap: 10px;
+    width: 100%;
+    height: auto;
     align-items: center;
     justify-content: center;
 
@@ -228,7 +232,8 @@ section {
 
 .names input {
     height: 40px;
-    width: 305px;
+    width: 100%;
+    max-width: 305px;
     border-radius: 8px;
     border: none;
 }
@@ -313,4 +318,208 @@ footer {
 
 .apps a {
     color: gray;
+}
+@media (max-width: 768px) {
+
+    nav {
+        height: auto;
+        padding: 16px 0;
+    }
+
+    nav ul {
+        width: 100%;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .fut,
+    .ave {
+        display: none;
+    }
+
+    .diff {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    img {
+        height: 260px;
+    }
+
+    .special {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .special h1 {
+        font-size: 26px;
+    }
+
+    .special p {
+        font-size: 18px;
+    }
+
+    .soups {
+        padding: 20px;
+        gap: 40px;
+    }
+
+    .firstline {
+        flex-direction: column;
+        margin-left: 0;
+        align-items: center;
+    }
+
+    .soup1 {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .soup1 img {
+        width: 100%;
+        height: auto;
+        margin-top: 0;
+    }
+
+    .soup1 h1 {
+        margin: 10px 0 0;
+        font-size: 18px;
+        text-align: center;
+        margin-top: -60px;
+    }
+
+    .soup1 p {
+        font-size: 16px;
+    }
+
+    .order {
+        width: 100%;
+        height: 150vh;
+        margin-top: 60px;
+        padding: 10px;
+        padding-bottom: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .order h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+    .inps{
+        height: 100%;
+    }
+
+    .names {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        height: auto;
+        justify-content: space-between;
+    }
+
+    .names input {
+        max-width: 100%;
+    }
+
+    .event {
+        display: flex;
+    }
+    .textarea{
+        height: auto;
+        margin-top: 40px;
+    }
+    .brown {
+        width: 100%;
+        margin-top: -5px;
+    }
+
+    footer {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .follow h5 {
+        font-size: 20px;
+    }
+
+    .apps {
+        font-size: 24px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    nav ul {
+        width: 85%;
+    }
+
+    .diff {
+        font-size: 32px;
+    }
+
+    img {
+        height: 380px;
+    }
+
+    .special {
+        width: 90%;
+        margin: auto;
+    }
+
+    .special h1 {
+        font-size: 30px;
+    }
+
+    .special p {
+        font-size: 20px;
+    }
+
+    .soups {
+        padding: 40px;
+        gap: 60px;
+    }
+
+    .firstline {
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    .soup1 {
+        width: 280px;
+    }
+    .soup1 h1{
+        margin-top: -25px;
+        margin-left: 5px;
+    }
+
+    .soup1 img {
+        width: 100%;
+        height: auto;
+        margin-top: -20px;
+    }
+
+    .order {
+        width: 90%;
+        height: auto;
+        padding: 30px;
+    }
+    .names{
+        width: 100%;
+        /* justify-content: space-between; */
+    } 
+    .names input {
+        display: flex;
+    }
+    .event{
+        display: flex;
+    }
+    .brown {
+        width: 80%;
+    }
+
+    footer {
+        height: auto;
+        padding: 24px 0;
+    }
 }
