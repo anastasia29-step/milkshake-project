@@ -4,9 +4,15 @@
     box-sizing: border-box;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 body {
     opacity: 0;
     animation: show 2s ease forwards;
+    overflow-x: hidden;
 }
 
 @keyframes show {
@@ -43,7 +49,6 @@ nav {
     height: 30px;
     align-items: center;
     font-family: 'Times New Roman', Times, serif;
-    /* background-color: green; */
     padding-top: 20px;
 }
 
@@ -56,7 +61,7 @@ nav {
     gap: 5px;
     align-items: center;
     position: relative;
-    z-index:10000;
+    z-index: 10000;
 }
 
 .apps i {
@@ -72,7 +77,8 @@ nav {
     font-weight: 300;
     cursor: pointer;
 }
-.log a{
+
+.log a {
     display: flex;
     text-decoration: none;
     align-items: center;
@@ -80,9 +86,11 @@ nav {
     position: relative;
     z-index: 1000;
 }
-.log a p{
+
+.log a p {
     cursor: pointer;
 }
+
 .log i {
     font-size: 28px;
     color: rgb(185, 185, 185, 1);
@@ -130,11 +138,14 @@ section {
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .left {
     height: 100%;
-    width: 50%;
+    width: 40%;
     position: absolute;
     left: 300px;
 }
@@ -191,7 +202,7 @@ section {
     width: 50%;
     position: absolute;
     left: 760px;
-    top: 1250px;
+    top: 1150px;
 }
 
 .text {
@@ -292,7 +303,8 @@ section {
     font-family: "Avenir Light";
 
 }
-.suratebi{
+
+.suratebi {
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -301,23 +313,28 @@ section {
     margin-left: 20px;
     margin-right: 20px;
 }
-.big{
+
+.big {
     grid-row: span 2;
 }
-.item{
+
+.item {
     overflow: hidden;
     cursor: pointer;
 }
-.item img{
+
+.item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: 0.4s;
     position: relative;
 }
-.item img:hover{
+
+.item img:hover {
     filter: brightness(60%) !important;
 }
+
 .loading {
     width: 133px;
     height: 40px;
@@ -502,4 +519,325 @@ textarea {
 
 .inst a {
     text-decoration: none;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 35px;
+    z-index: 9999;
+}
+
+.burger span {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    transition: 0.3s;
+}
+@media (max-width: 768px) {
+
+    header,
+    section {
+        min-height: 100vh;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        height: auto;
+        min-height: 100vh;
+        background-position: center;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        height: auto;
+        position: relative;
+    }
+
+    .title h1 {
+        display: flex;
+        font-size: 36px;
+    }
+
+    .list ul {
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+    }
+
+    .apps,
+    .log {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        height: auto;
+        padding-bottom: 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    .suratebi {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .list {
+        display: none;
+        position: absolute;
+        top: 110px;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        padding: 20px 0;
+    }
+
+    .list ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .burger {
+        display: flex;
+    }
+}
+
+@media (max-width: 768px) {
+    .web {
+        margin-left: 60px;
+    }
+
+    .surati {
+        margin-left: 20px;
+    }
+
+    .card {
+        flex-direction: column;
+        height: auto;
+        padding: 30px 20px;
+        gap: 40px;
+    }
+
+    .cardLeft {
+        width: 100%;
+        margin: 0;
+        height: auto;
+        align-items: center;
+        text-align: center;
+    }
+
+    .cardLeft h1 {
+        font-size: 42px;
+        margin-bottom: 20px;
+    }
+
+    .icons {
+        justify-content: center;
+    }
+
+    .cardRight {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    .cardRight input,
+    .cardRight textarea {
+        width: 100%;
+    }
+
+    .names {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .names input {
+        width: 100%;
+    }
+
+    .cardRight button {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .Privacy {
+        margin-left: 30px;
+        text-align: center;
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .list {
+        display: none;
+        position: absolute;
+        top: 110px;
+        left: 0;
+        width: 100%;
+        height: 580px;
+        background-color: white;
+        padding: 20px 0;
+    }
+
+    .list ul {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 30px;
+    }
+
+    .list ul li {
+        display: flex;
+        justify-content: center;
+    }
+
+    #menu-toggle:checked+.burger+.list {
+        display: flex;
+        justify-content: center;
+    }
+
+    .burger {
+        display: flex;
+    }
+}
+
+@media (max-width: 768px) {
+    #menu-toggle:checked+.burger span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    #menu-toggle:checked+.burger span:nth-child(2) {
+        opacity: 0;
+    }
+
+    #menu-toggle:checked+.burger span:nth-child(3) {
+        transform: rotate(-45deg) translate(6px, -6px);
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        height: auto;
+        padding: 40px 20px;
+        position: relative;
+    }
+}
+
+@media (max-width: 768px) {
+    .left {
+        position: relative;
+        width: 100%;
+        left: 0;
+        height: auto;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .firstFood,
+    .secondFood,
+    .thirdFood,
+    .fourthFood,
+    .fifthFood {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        width: 120px;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .right {
+        position: relative;
+        width: 100%;
+        left: 0;
+        top: 0;
+        margin-top: 30px;
+
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .text {
+        width: 100%;
+        max-width: 360px;
+        height: auto;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .padding,
+    .map {
+        margin-top: 0;
+    }
+}
+@media (max-width: 768px) {
+
+  .pinkduo {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .web {
+    flex-direction: column;
+    height: auto;
+    padding: 0;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .user {
+    margin-left: 0;
+  }
+
+  .surati img {
+    width: 64px;
+    height: 64px;
+  }
+
+  .web button {
+    width: 100%;
+    max-width: 220px;
+  }
+
+  .suratebi {
+    height: auto;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-top: 30px;
+  }
+
+  .big {
+    grid-row: span 1;
+  }
+
+  .loading {
+    margin: 40px auto 0;
+    display: block;
+  }
 }
