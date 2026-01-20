@@ -323,23 +323,16 @@ footer {
 
     nav {
         height: auto;
-        padding: 16px 0;
+        padding: 20px 0;
     }
 
     nav ul {
         width: 100%;
         flex-direction: column;
-        gap: 12px;
+        gap: 15px;
     }
-
-    .fut,
-    .ave {
-        display: none;
-    }
-
     .diff {
         font-size: 26px;
-        text-align: center;
     }
 
     img {

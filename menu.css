@@ -28,6 +28,11 @@ nav img {
     border: 1px solid black;
 }
 
+.burger {
+    display: none;
+}
+
+
 .list ul {
     display: flex;
     height: 100%;
@@ -79,10 +84,10 @@ nav img {
 
 .card {
     width: 1069px;
-    height: 9440px;
+    height: 3640px;
     background-color: #DED4C4;
     margin-top: -10px;
-    margin-left: 240px;
+    margin-left: 200px;
     position: absolute;
     padding: 20px;
 }
@@ -216,7 +221,8 @@ nav img {
     display: flex;
     cursor: pointer;
 }
-.item:hover{
+
+.item:hover {
     background-color: #D3C9BA;
 }
 
@@ -242,4 +248,228 @@ nav img {
     font-family: "Playfair Display", serif;
     font-weight: bold;
     margin-top: 10px;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.burger {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    nav {
+        height: 180px;
+    }
+
+    .list {
+        position: fixed !important;
+        top: 0;
+        left: 0;
+        margin: 0 !important;
+        width: 100% !important;
+        height: 60px;
+        background-color: #EAE0DA;
+        z-index: 999999;
+        padding: 10px 15px;
+    }
+
+    .list ul {
+        display: none;
+    }
+
+    .burger {
+        display: flex !important;
+        flex-direction: column;
+        gap: 6px;
+        width: 30px;
+        cursor: pointer;
+    }
+
+    .burger span {
+        height: 3px;
+        width: 100%;
+        background-color: black;
+        transition: 0.3s;
+    }
+    .list ul li {
+        text-align: center;
+    }
+
+    #menu-toggle:checked~.list ul {
+        display: flex !important;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #EAE0DA;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        border-top: 1px solid black;
+        z-index: 9999999999;
+    }
+
+    #menu-toggle:checked+.burger span:nth-child(1) {
+        transform: rotate(45deg) translate(6px, 6px);
+    }
+
+    #menu-toggle:checked+.burger span:nth-child(2) {
+        opacity: 0;
+    }
+
+    #menu-toggle:checked+.burger span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -7px);
+    }
+
+    .navText {
+        position: absolute;
+        width: 100%;
+        margin: 0;
+        top: 60px;
+        left: 0;
+        text-align: center;
+    }
+
+    .navText h2 {
+        font-size: 42px;
+    }
+
+    .navText h3 {
+        font-size: 14px;
+    }
+
+    .card {
+        position: static;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 15px;
+    }
+
+    .card button {
+        width: 100%;
+    }
+
+    .select {
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    .menusel {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid gray;
+    }
+
+    .food {
+        width: 100%;
+    }
+
+    .food ul {
+        gap: 12px;
+        font-size: 16px;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+    }
+
+    .item {
+        width: 100%;
+        height: auto;
+    }
+
+    .menu-item {
+        padding: 15px;
+    }
+
+    .menu-item h2 {
+        font-size: 15px;
+    }
+
+    .menu-item h3 {
+        font-size: 13px;
+    }
+
+    .spec {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    nav {
+        height: 220px;
+    }
+
+    .list {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: -200px;
+    }
+
+    .navText {
+        width: 100%;
+        margin-left: 0;
+        left: 0;
+        text-align: center;
+        margin-top: -170px;
+    }
+
+    .navText h2 {
+        font-size: 65px;
+    }
+
+    .navText h3 {
+        font-size: 15px;
+    }
+
+    .card {
+        width: 90%;
+        margin-left: 5%;
+        height: auto;
+        position: static;
+    }
+
+    .select {
+        flex-wrap: wrap;
+        height: auto;
+        gap: 10px;
+    }
+
+    .menusel {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid gray;
+    }
+
+    .food {
+        width: 100%;
+    }
+
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 100%;
+    }
+
+    .item {
+        width: 100%;
+        height: auto;
+    }
+
+    .menu-item h2 {
+        font-size: 16px;
+    }
+
+    .menu-item h3 {
+        font-size: 14px;
+    }
 }
