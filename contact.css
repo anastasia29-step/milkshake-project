@@ -215,3 +215,149 @@ section .card {
     color: white;
     border: none;
 }
+@media (max-width: 768px) {
+
+    /* SECTION */
+    section {
+        height: auto !important;
+        position: relative;
+    }
+
+    section img {
+        height: 300px;
+    }
+
+    /* CARD RESET */
+    section .card {
+        position: relative !important;
+        width: 100% !important;
+        height: auto !important;
+        margin: -60px 0 0 0 !important;
+        padding: 20px 16px !important;
+    }
+
+    /* TITLE */
+    .card .title {
+        height: auto;
+        margin: 10px 0 20px;
+    }
+
+    .title h1 {
+        font-size: 26px;
+        transform: none;
+        text-align: center;
+    }
+
+    /* STACK SIDES */
+    .sides {
+        flex-direction: column !important;
+        padding: 0 !important;
+        gap: 30px !important;
+    }
+
+    .left,
+    .right {
+        width: 100% !important;
+        height: auto !important;
+        margin: 0 !important;
+    }
+
+    /* REMOVE DIVIDER LINE */
+    .line {
+        display: none;
+    }
+
+    /* LEFT TEXT */
+    .left p {
+        font-size: 18px;
+        line-height: 1.6em;
+        text-align: center;
+    }
+
+    /* FORM */
+    .right {
+        gap: 14px;
+    }
+
+    .right label {
+        font-size: 14px;
+    }
+
+    .right input,
+    .right textarea {
+        width: 100% !important;
+        height: auto;
+        margin-top: 0 !important;
+        padding: 10px;
+    }
+
+    .right textarea {
+        height: 100px;
+    }
+
+    .right button {
+        width: 100%;
+        margin: 20px 0 0 0 !important;
+    }
+
+    /* NAV */
+    nav {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    nav ul {
+        width: 100%;
+        flex-direction: column;
+        gap: 14px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    section {
+        height: auto !important;
+    }
+
+    section img {
+        height: 400px;
+    }
+
+    section .card {
+        position: relative !important;
+        width: 90% !important;
+        height: auto !important;
+        margin: -100px auto 0 !important;
+        padding: 30px !important;
+    }
+
+    .sides {
+        padding: 0 !important;
+        gap: 30px;
+    }
+
+    .left {
+        width: 40% !important;
+    }
+
+    .right {
+        width: 60% !important;
+        margin-left: 0 !important;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .right input,
+    .right textarea {
+        width: 100% !important;
+    }
+
+    .right button {
+        margin-left: 0;
+    }
+
+    nav ul {
+        width: 90%;
+    }
+}
