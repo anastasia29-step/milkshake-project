@@ -57,12 +57,14 @@ nav ul li {
 
 section {
     width: 100%;
-    height: 160vh;
+    height: auto;
+    min-height: 100vh;
     background-color: #EAE0DA;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    padding: 20px;
 }
 
 .title h1 {
@@ -76,7 +78,8 @@ section {
 .par {
     display: flex;
     flex-direction: column;
-    width: 800px;
+    max-width: 800px;
+    width: 100%;
 }
 
 .par h2 {
@@ -130,4 +133,111 @@ footer {
 
 .apps a {
     color: gray;
+}
+@media (max-width: 768px) {
+
+    nav {
+        height: auto;
+        padding: 16px 0;
+    }
+
+    nav ul {
+        width: 100%;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .fut,
+    .ave {
+        display: none;
+    }
+
+    .diff {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    section {
+        padding: 16px;
+        gap: 20px;
+    }
+
+    .title h1 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .par {
+        max-width: 100%;
+    }
+
+    .par h2 {
+        font-size: 16px;
+        margin-left: 0;
+    }
+
+    .par p,
+    .par li {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .par ol {
+        margin-left: 18px;
+    }
+
+    footer {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .follow h5 {
+        font-size: 20px;
+    }
+
+    .apps {
+        font-size: 24px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    nav ul {
+        width: 80%;
+    }
+
+    .diff {
+        font-size: 32px;
+    }
+
+    section {
+        padding: 24px;
+    }
+
+    .title h1 {
+        font-size: 20px;
+    }
+
+    .par {
+        max-width: 90%;
+    }
+
+    .par h2 {
+        font-size: 18px;
+        margin-left: 0;
+    }
+
+    .par p,
+    .par li {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    footer {
+        height: auto;
+        padding: 24px 0;
+    }
+
+    .apps {
+        font-size: 26px;
+    }
 }
