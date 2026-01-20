@@ -841,3 +841,167 @@ textarea {
     display: block;
   }
 }
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  header {
+    height: auto;
+    min-height: 100vh;
+  }
+
+  nav {
+    position: relative;
+    height: auto;
+  }
+
+  .title {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .list {
+    width: 100%;
+  }
+
+  .list ul {
+    gap: 20px;
+    font-size: 17px;
+  }
+
+  section {
+    height: auto;
+    padding: 60px 40px;
+  }
+
+  .left {
+    position: relative;
+    width: 100%;
+    left: 0;
+    height: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .firstFood,
+  .secondFood,
+  .thirdFood,
+  .fourthFood,
+  .fifthFood {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+
+    width: 180px;
+    height: auto;
+  }
+
+  .right {
+    position: relative;
+    width: 100%;
+    left: 0;
+    top: 0;
+    margin-top: 40px;
+
+    display: flex;
+    justify-content: center;
+  }
+
+  .text {
+    width: 100%;
+    max-width: 520px;
+    height: auto;
+  }
+
+  .pink {
+    height: auto;
+    padding: 60px 40px;
+  }
+
+  .ptext {
+    height: auto;
+    gap: 40px;
+  }
+
+  .pinkduo {
+    height: auto;
+    padding: 60px 40px;
+  }
+
+  .web {
+    height: auto;
+    padding: 0;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .user {
+    margin-left: 0;
+  }
+
+  .suratebi {
+    height: auto;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+  }
+
+  .big {
+    grid-row: span 1;
+  }
+
+  .card {
+    flex-direction: column;
+    height: auto;
+    padding: 60px 40px;
+    gap: 50px;
+  }
+
+  .cardLeft {
+    width: 100%;
+    margin: 0;
+    height: auto;
+    align-items: center;
+    text-align: center;
+  }
+
+  .icons {
+    justify-content: center;
+  }
+
+  .cardRight {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+  .cardRight input,
+  .cardRight textarea {
+    width: 100%;
+  }
+
+  .names {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .names input {
+    width: 100%;
+  }
+
+  .cardRight button {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .map,
+  .map iframe {
+    height: 70vh;
+    margin-top: 4px;
+  }
+  .Privacy{
+    margin-top: 5px;
+  }
+}
