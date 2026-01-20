@@ -275,11 +275,9 @@ nav img {
         z-index: 999999;
         padding: 10px 15px;
     }
-
     .list ul {
         display: none;
     }
-
     .burger {
         display: flex !important;
         flex-direction: column;
@@ -294,10 +292,10 @@ nav img {
         background-color: black;
         transition: 0.3s;
     }
+
     .list ul li {
         text-align: center;
     }
-
     #menu-toggle:checked~.list ul {
         display: flex !important;
         position: absolute;
